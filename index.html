@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <img src="./img/codeland.png" alt="codeland logo" />
+    </header>
+
+    <section class="form-section">
+      <div class="container">
+        <h2 class="form-title">Contact Us!</h2>
+
+        <form id="form">
+          <div class="form-grid">
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                id="username"
+                class="name"
+                placeholder="name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="phone"
+                placeholder="phone"
+              />
+
+              <p class="invalid-feedback-change phone-feedback-change">
+                Write your phone number
+              </p>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="company"
+                id="company"
+                class="company"
+                placeholder="company"
+              />
+            </div>
+          </div>
+          <div class="textarea-group">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your message"
+              class="message"
+              style="overflow: hidden"
+            ></textarea>
+          </div>
+
+          <div class="form-buttons">
+            <button class="btn btn-send" id="send">send</button>
+            <button class="btn btn-reset" id="reset-val">reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h3>&copy; codeland 2020</h3>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
